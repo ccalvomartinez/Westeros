@@ -43,5 +43,35 @@ final class DataSources{
         })
     }
     
+    static func seasonDataSource(model: [Season]) -> ArrayDataSource<Season>{
+        return ArrayDataSource(model: model, cellMaker: { (season: Season, tableView: UITableView) -> UITableViewCell in
+            
+            let cellID = "Season"
+            var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
+            if cell == nil{
+                cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellID)
+            }
+            
+            cell?.imageView?.image = season.image
+            cell?.textLabel?.text = season.title
+            cell?.detailTextLabel?.text = "Episodes: \(season.episodes.count)"
+            return cell!
+        })
+    }
     
+    static func episodeDataSource(model: [Episode]) -> ArrayDataSource<Episode>{
+        return ArrayDataSource(model: model, cellMaker: { (episode: Episode, tableView: UITableView) -> UITableViewCell in
+            
+            let cellID = "Episode"
+            var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
+            if cell == nil{
+                cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellID)
+            }
+            
+            
+            cell?.textLabel?.text = episode.title
+            cell?.detailTextLabel?.text = "Air date: \(episode.airDate.description(dateStyle: DateFormatter.Style.short, timeStyle: DateFormatter.Style.none))"
+            return cell!
+        })
+    }
 }

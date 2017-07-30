@@ -23,7 +23,9 @@
             super.init()
         }
         
-        
+        func element(atIndexPath indexPath: IndexPath) -> Element{
+            return _model[indexPath.row]
+        }
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             
             return _model.count
@@ -32,7 +34,7 @@
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             
-            let elt = _model[indexPath.row]
+            let elt = element(atIndexPath: indexPath)
             return _cellMaker(elt, tableView)
         }
         

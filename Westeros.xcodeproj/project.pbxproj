@@ -22,6 +22,19 @@
 		837D1A121F0EC23A009E6147 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D1A111F0EC23A009E6147 /* House.swift */; };
 		837D1A1A1F0ECA8B009E6147 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D1A191F0ECA8B009E6147 /* Person.swift */; };
 		837D1A1C1F0ECAB5009E6147 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D1A1B1F0ECAB5009E6147 /* PersonTests.swift */; };
+		838F4D2A1F2DE115002B3FDB /* icon-wikipedia.png in Resources */ = {isa = PBXBuildFile; fileRef = 838F4D281F2DE115002B3FDB /* icon-wikipedia.png */; };
+		838F4D2B1F2DE115002B3FDB /* members.png in Resources */ = {isa = PBXBuildFile; fileRef = 838F4D291F2DE115002B3FDB /* members.png */; };
+		838F4D2D1F2DE2BC002B3FDB /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F4D2C1F2DE2BC002B3FDB /* Episode.swift */; };
+		838F4D2F1F2DE4AD002B3FDB /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F4D2E1F2DE4AD002B3FDB /* Season.swift */; };
+		838F4D311F2DEA88002B3FDB /* SeasonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F4D301F2DEA88002B3FDB /* SeasonTests.swift */; };
+		838F4D331F2DEC4D002B3FDB /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F4D321F2DEC4D002B3FDB /* FoundationExtensions.swift */; };
+		838F4D351F2DF30B002B3FDB /* EpisodesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F4D341F2DF30B002B3FDB /* EpisodesTests.swift */; };
+		838F4D3B1F2E28DF002B3FDB /* Game_of_Thrones_Season_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 838F4D361F2E28DF002B3FDB /* Game_of_Thrones_Season_1.jpg */; };
+		838F4D3C1F2E28DF002B3FDB /* Game_of_Thrones_Season_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 838F4D371F2E28DF002B3FDB /* Game_of_Thrones_Season_2.jpg */; };
+		838F4D3D1F2E28DF002B3FDB /* Game_of_Thrones_Season_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 838F4D381F2E28DF002B3FDB /* Game_of_Thrones_Season_3.jpg */; };
+		838F4D3E1F2E28DF002B3FDB /* Game_of_Thrones_Season_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 838F4D391F2E28DF002B3FDB /* Game_of_Thrones_Season_4.jpg */; };
+		838F4D3F1F2E28DF002B3FDB /* Game_of_Thrones_Season_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 838F4D3A1F2E28DF002B3FDB /* Game_of_Thrones_Season_5.png */; };
+		838F4D411F2E2908002B3FDB /* Game_of_Thrones_Season_6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 838F4D401F2E2908002B3FDB /* Game_of_Thrones_Season_6.jpeg */; };
 		83F2C8F71F0EB6A70058B4A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F2C8F61F0EB6A70058B4A9 /* AppDelegate.swift */; };
 		83F2C8F91F0EB6A70058B4A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F2C8F81F0EB6A70058B4A9 /* ViewController.swift */; };
 		83F2C8FE1F0EB6A70058B4A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F2C8FD1F0EB6A70058B4A9 /* Assets.xcassets */; };
@@ -64,6 +77,19 @@
 		837D1A111F0EC23A009E6147 /* House.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		837D1A191F0ECA8B009E6147 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		837D1A1B1F0ECAB5009E6147 /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
+		838F4D281F2DE115002B3FDB /* icon-wikipedia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-wikipedia.png"; sourceTree = "<group>"; };
+		838F4D291F2DE115002B3FDB /* members.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = members.png; sourceTree = "<group>"; };
+		838F4D2C1F2DE2BC002B3FDB /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		838F4D2E1F2DE4AD002B3FDB /* Season.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
+		838F4D301F2DEA88002B3FDB /* SeasonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonTests.swift; sourceTree = "<group>"; };
+		838F4D321F2DEC4D002B3FDB /* FoundationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
+		838F4D341F2DF30B002B3FDB /* EpisodesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodesTests.swift; sourceTree = "<group>"; };
+		838F4D361F2E28DF002B3FDB /* Game_of_Thrones_Season_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Game_of_Thrones_Season_1.jpg; sourceTree = "<group>"; };
+		838F4D371F2E28DF002B3FDB /* Game_of_Thrones_Season_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Game_of_Thrones_Season_2.jpg; sourceTree = "<group>"; };
+		838F4D381F2E28DF002B3FDB /* Game_of_Thrones_Season_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Game_of_Thrones_Season_3.jpg; sourceTree = "<group>"; };
+		838F4D391F2E28DF002B3FDB /* Game_of_Thrones_Season_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Game_of_Thrones_Season_4.jpg; sourceTree = "<group>"; };
+		838F4D3A1F2E28DF002B3FDB /* Game_of_Thrones_Season_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Game_of_Thrones_Season_5.png; sourceTree = "<group>"; };
+		838F4D401F2E2908002B3FDB /* Game_of_Thrones_Season_6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Game_of_Thrones_Season_6.jpeg; sourceTree = "<group>"; };
 		83F2C8F31F0EB6A70058B4A9 /* Westeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F2C8F61F0EB6A70058B4A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83F2C8F81F0EB6A70058B4A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +152,8 @@
 				837D1A111F0EC23A009E6147 /* House.swift */,
 				837D1A191F0ECA8B009E6147 /* Person.swift */,
 				83227EB11F1B6A250082DE3C /* Repository.swift */,
+				838F4D2C1F2DE2BC002B3FDB /* Episode.swift */,
+				838F4D2E1F2DE4AD002B3FDB /* Season.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -133,6 +161,14 @@
 		837D1A181F0EC8A5009E6147 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				838F4D401F2E2908002B3FDB /* Game_of_Thrones_Season_6.jpeg */,
+				838F4D361F2E28DF002B3FDB /* Game_of_Thrones_Season_1.jpg */,
+				838F4D371F2E28DF002B3FDB /* Game_of_Thrones_Season_2.jpg */,
+				838F4D381F2E28DF002B3FDB /* Game_of_Thrones_Season_3.jpg */,
+				838F4D391F2E28DF002B3FDB /* Game_of_Thrones_Season_4.jpg */,
+				838F4D3A1F2E28DF002B3FDB /* Game_of_Thrones_Season_5.png */,
+				838F4D281F2DE115002B3FDB /* icon-wikipedia.png */,
+				838F4D291F2DE115002B3FDB /* members.png */,
 				83227EC31F1B93B10082DE3C /* Casa_Lannister_escudo.png */,
 				83227EC41F1B93B10082DE3C /* Casa_Stark_escudo.png */,
 				83227EB71F1B6F460082DE3C /* Casa_Greyjoy_escudo.png */,
@@ -172,6 +208,7 @@
 				83F2C8FD1F0EB6A70058B4A9 /* Assets.xcassets */,
 				83F2C9021F0EB6A70058B4A9 /* Info.plist */,
 				83227EB51F1B6CF90082DE3C /* UIKitExtensions.swift */,
+				838F4D321F2DEC4D002B3FDB /* FoundationExtensions.swift */,
 			);
 			path = Westeros;
 			sourceTree = "<group>";
@@ -183,6 +220,8 @@
 				837D1A0F1F0EC102009E6147 /* HouseTests.swift */,
 				837D1A1B1F0ECAB5009E6147 /* PersonTests.swift */,
 				83227EBF1F1B70560082DE3C /* RepositoryTests.swift */,
+				838F4D301F2DEA88002B3FDB /* SeasonTests.swift */,
+				838F4D341F2DF30B002B3FDB /* EpisodesTests.swift */,
 			);
 			path = WesterosTests;
 			sourceTree = "<group>";
@@ -296,14 +335,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838F4D2B1F2DE115002B3FDB /* members.png in Resources */,
 				83227EC51F1B93B10082DE3C /* Casa_Lannister_escudo.png in Resources */,
 				83227EBC1F1B6F460082DE3C /* Casa_Mormont.png in Resources */,
+				838F4D2A1F2DE115002B3FDB /* icon-wikipedia.png in Resources */,
 				83FE96F31F2121FF00BA9463 /* MembersTableViewController.xib in Resources */,
+				838F4D3D1F2E28DF002B3FDB /* Game_of_Thrones_Season_3.jpg in Resources */,
+				838F4D3C1F2E28DF002B3FDB /* Game_of_Thrones_Season_2.jpg in Resources */,
+				838F4D3E1F2E28DF002B3FDB /* Game_of_Thrones_Season_4.jpg in Resources */,
 				83227EBD1F1B6F460082DE3C /* Casa_Targaryen_estandarte.png in Resources */,
+				838F4D3F1F2E28DF002B3FDB /* Game_of_Thrones_Season_5.png in Resources */,
 				83F2C8FE1F0EB6A70058B4A9 /* Assets.xcassets in Resources */,
 				83F72FBD1F1D687A008B6012 /* HousesTableViewController.xib in Resources */,
 				83F72FB71F1D4A42008B6012 /* WikiViewController.xib in Resources */,
+				838F4D3B1F2E28DF002B3FDB /* Game_of_Thrones_Season_1.jpg in Resources */,
 				83227EBE1F1B6F460082DE3C /* Casa_Tyrell.png in Resources */,
+				838F4D411F2E2908002B3FDB /* Game_of_Thrones_Season_6.jpeg in Resources */,
 				83227EBB1F1B6F460082DE3C /* Casa_Greyjoy_escudo.png in Resources */,
 				83227EC61F1B93B10082DE3C /* Casa_Stark_escudo.png in Resources */,
 				8312F9801F14128E0026D248 /* HouseViewController.xib in Resources */,
@@ -325,12 +372,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				83F72FB61F1D4A42008B6012 /* WikiViewController.swift in Sources */,
+				838F4D2D1F2DE2BC002B3FDB /* Episode.swift in Sources */,
 				83FE96FF1F2124AD00BA9463 /* Delegates.swift in Sources */,
 				8312F97F1F14128E0026D248 /* HouseViewController.swift in Sources */,
 				83FE96F91F21243500BA9463 /* ArrayTableViewDelegate.swift in Sources */,
 				83F2C8F91F0EB6A70058B4A9 /* ViewController.swift in Sources */,
 				83FE96FC1F21247E00BA9463 /* DataSources.swift in Sources */,
 				83FE96F71F21240800BA9463 /* ArrayTableViewController.swift in Sources */,
+				838F4D331F2DEC4D002B3FDB /* FoundationExtensions.swift in Sources */,
 				837D1A121F0EC23A009E6147 /* House.swift in Sources */,
 				83FE96F21F2121FF00BA9463 /* MembersTableViewController.swift in Sources */,
 				83FE96F51F2123C800BA9463 /* ArrayDataSource.swift in Sources */,
@@ -339,6 +388,7 @@
 				83F72FBC1F1D687A008B6012 /* HousesTableViewController.swift in Sources */,
 				83227EB61F1B6CF90082DE3C /* UIKitExtensions.swift in Sources */,
 				83227EB21F1B6A250082DE3C /* Repository.swift in Sources */,
+				838F4D2F1F2DE4AD002B3FDB /* Season.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,9 +396,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838F4D311F2DEA88002B3FDB /* SeasonTests.swift in Sources */,
 				837D1A101F0EC102009E6147 /* HouseTests.swift in Sources */,
 				837D1A1C1F0ECAB5009E6147 /* PersonTests.swift in Sources */,
 				83227EC01F1B70560082DE3C /* RepositoryTests.swift in Sources */,
+				838F4D351F2DF30B002B3FDB /* EpisodesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

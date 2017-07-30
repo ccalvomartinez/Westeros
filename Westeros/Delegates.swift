@@ -23,4 +23,29 @@ final class Delegates{
         
         })
     }
+    
+    static func peopleDelegate(model: [Person]) -> ArrayTableViewDelegate<Person>{
+        return ArrayTableViewDelegate(model:model, viewMaker: {(person: Person, tableView: UITableView, navigationController: UINavigationController?) -> Void in
+            
+        })
+    }
+    
+    static func seasonDelegate(model: [Season]) -> ArrayTableViewDelegate<Season>{
+        return ArrayTableViewDelegate(model:model, viewMaker: {(season: Season, tableView: UITableView, navigationController: UINavigationController?) -> Void in
+            let dataSource = DataSources.episodeDataSource(model: season.episodes)
+            let delegate = Delegates.episodeDelegate(model: season.episodes)
+            let arrayTableVC = ArrayTableViewController(dataSource: dataSource,
+                                                        arrayDelegate: delegate,
+                                                        title: "Episodes \(season.title)",
+                                                        style: .plain)
+            
+            navigationController?.pushViewController(arrayTableVC, animated: true)
+        })
+    }
+    
+    static func episodeDelegate(model: [Episode]) -> ArrayTableViewDelegate<Episode>{
+        return ArrayTableViewDelegate(model:model, viewMaker: {(episode: Episode, tableView: UITableView, navigationController: UINavigationController?) -> Void in
+            
+        })
+    }
 }

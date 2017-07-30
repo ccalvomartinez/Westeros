@@ -22,20 +22,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = UIColor.cyan
         
         // Creamos unos modelos
-        let houses = Repository.local.houses
+        let houses = Repository.local.housesFactory.elements
+        let seasons = Repository.local.seasonsFactory.elements
         
         // Creamos los controladores
-        let dataSource = DataSources.houseDataSource(model: houses)
-        let delegate = Delegates.housesDelegate(model: houses)
-        let arrayTableVC = ArrayTableViewController(dataSource: dataSource,
-                                                    arrayDelegate: delegate,
+        let houseDataSource = DataSources.houseDataSource(model: houses)
+        let houseDelegate = Delegates.housesDelegate(model: houses)
+        let houseArrayTableVC = ArrayTableViewController(dataSource: houseDataSource,
+                                                    arrayDelegate: houseDelegate,
                                                     title: "Westeros",
                                                     style: .plain)
-        let housesVC = arrayTableVC.wrappedInNavigation()
+        let housesVC = houseArrayTableVC.wrappedInNavigation()
         
+        let seasonDataSource = DataSources.seasonDataSource(model: seasons)
+        let seasonDelegate = Delegates.seasonDelegate(model: seasons)
+        let seasonArrayTableVC = ArrayTableViewController(dataSource: seasonDataSource,
+                                                         arrayDelegate: seasonDelegate,
+                                                         title: "Seasons",
+                                                         style: .plain)
+        let seasonsVC = seasonArrayTableVC.wrappedInNavigation()
+        
+        let tabViewController = UITabBarController()
+        tabViewController.viewControllers=[housesVC, seasonsVC]
         
         //Aignamos al RootVC
-        let rootVC = housesVC
+        let rootVC = tabViewController
         window?.rootViewController=rootVC
         
         return true

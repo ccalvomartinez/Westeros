@@ -15,7 +15,7 @@ final class ArrayTableViewDelegate<Element>: NSObject, UITableViewDelegate{
      typealias ViewMaker = (Element, UITableView, UINavigationController?)->Void
     
     private let _model : Elements
-    private var _myTableController: UITableViewController?
+    private weak var _myTableController: UITableViewController?
     private let _viewMaker: ViewMaker
     
     init(model: Elements,  viewMaker: @escaping ViewMaker){

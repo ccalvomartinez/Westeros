@@ -26,14 +26,14 @@ class RepositoryTests: XCTestCase {
     }
     
     func testLocalRepoitoryHousesCreation(){
-        let houses = Repository.local.houses
+        let houses = Repository.local.housesFactory.elements
         
         XCTAssertNotNil(houses)
         XCTAssertGreaterThan(houses.count, 0)
     }
     
     func testLocalRepositoryHousesIsSortedArray() {
-        let houses = Repository.local.houses
+        let houses = Repository.local.housesFactory.elements
         
         // El tipo es un Array de House
         XCTAssertTrue(type(of: houses) == [House].self)
@@ -51,19 +51,19 @@ class RepositoryTests: XCTestCase {
     }
     
     func testLocalRepositoryFuncHouseReturnsHouseOrNil(){
-        let starkHouse = Repository.local.house(name: "StaRk")
+        let starkHouse = Repository.local.housesFactory.element(withName: "StaRk")
         
         XCTAssertNotNil(starkHouse)
         XCTAssertTrue(starkHouse?.name == "Stark")
         
-        let notExistHouse = Repository.local.house(name: "")
+        let notExistHouse = Repository.local.housesFactory.element(withName: "")
         XCTAssertNil(notExistHouse)
         
     }
     
     func testLocalRepositoryFilterHouses(){
         
-        let housesStartWithT = Repository.local.filteredHouses(filteredBy: {(house: House) -> Bool in return house.name.hasPrefix("T")})
+        let housesStartWithT = Repository.local.housesFactory.filteredElements(filteredBy: {(house: House) -> Bool in return house.name.hasPrefix("T")})
         
         
         XCTAssertEqual(2, housesStartWithT.count)
@@ -71,14 +71,14 @@ class RepositoryTests: XCTestCase {
             XCTAssertTrue(house.name.hasPrefix("T"))
         }
         
-        let housesWithMoreThan2People = Repository.local.filteredHouses(filteredBy: {$0.count >= 2})
+        let housesWithMoreThan2People = Repository.local.housesFactory.filteredElements(filteredBy: {$0.count >= 2})
         
         XCTAssertEqual(3, housesWithMoreThan2People.count)
         for house in housesWithMoreThan2People{
             XCTAssertTrue(house.count >= 2)
         }
         
-        let notResultFilterHouses = Repository.local.filteredHouses(filteredBy: {$0.count < 0})
+        let notResultFilterHouses = Repository.local.housesFactory.filteredElements(filteredBy: {$0.count < 0})
       
           XCTAssertEqual(0, notResultFilterHouses.count)
     }

@@ -48,6 +48,8 @@ class HouseViewController: UIViewController {
                                       target: self,
                                       action: #selector(displayMembers))
         
+        wikiButton.image = UIImage(named: "icon-wikipedia.png")?.withRenderingMode(.alwaysOriginal)
+        membersButton.image = UIImage(named: "members.png")?.withRenderingMode(.alwaysOriginal)
         
         // Añadimos el botón al controlador de navegación
         navigationItem.rightBarButtonItems = [wikiButton, membersButton]
